@@ -1,0 +1,97 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: #fafafa;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+footer {
+    color: aliceblue;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .topnav a#split {
+            float: right;
+            background-color: #04AA6D;
+            color: white;
+        }
+.navbar-nav {
+    float: right;
+}
+
+.bid_table {
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.bid_img {
+    width:50%;
+    height:50%;
+    padding:5px;
+}
+
+.bid_btn {
+    width: 200%;
+}
+
+    .bid_btn:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+#items_page {
+    color:cadetblue;
+    text-align:center;
+    padding:5%;
+}
+
+h1 {
+    color:cadetblue;
+    text-align:center;
+}
+
+
+
+

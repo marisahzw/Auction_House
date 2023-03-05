@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Auction_House.Models.Seller>
+
+@{
+    ViewData["Title"] = "Seller Index";
+}
+
+<h1>Seller Index</h1>
+
+<p>
+    <a asp-action="Create">Create New Seller</a>
+</p>
+
+<form asp-controller="Seller" asp-action="Index" method="get">
+    <p>
+        <input type="text" name="searchString" value="@ViewBag.CurrentFilter" placeholder="Search by name">
+        <input type="submit" value="Search" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+            
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                 
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bio)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,285 @@
+﻿@model IEnumerable<Item>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+
+
+</head>
+
+
+
+
+
+<video autoplay muted loop id="videoBG">
+    <source src="~/main.mp4" type="video/mp4">
+</video>
+<body>
+
+    <br>
+
+
+    <br>
+
+    <h1>WELCOME TO AUCTION HOUSE 15</h1>
+    <!--Display Items available-->
+    
+
+
+
+    <div class="main">
+
+
+        
+
+        <br>
+
+
+        <br>
+
+        <br>
+
+        <h3>
+            Welcome to our new online auction system! We are excited to introduce a platform that
+            allows both buyers and sellers to participate in the auctioning of a wide range of products.
+            Our application is designed to provide a seamless experience for anyone looking to buy or sell items in an online auction format
+        </h3>
+        <br>
+
+        <br>
+
+        <br>
+        <br>
+
+    </div>
+    <br>
+
+
+    <br>
+    <br>
+    <br>
+    <div class="images">
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="~/img/1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="~/img/2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="~/img/3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="~/img/4.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="~/img/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="For buyers, our system provides a simple and intuitive platform to browse and bid on a variety of products. Our search functionality makes it easy to find exactly what you are looking for, and our bidding system ensures that you have the opportunity to secure the products you want at the best possible price.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="~/img/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="For sellers, our platform offers a user-friendly interface to easily list and promote their products for auction.
+                        Our advanced bidding system allows for competitive and transparent bidding, ensuring that sellers receive the best value for their products.
+                    Additionally, sellers have access to our robust inventory management system, enabling them to track their auctions and adjust pricing or details as necessary.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="~/img/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Our online auction system is safe and secure,
+                    with robust authentication and data encryption technologies to protect your information.
+                    We are committed to providing a user-friendly experience that benefits both buyers and sellers, making the online auction process convenient and accessible for everyone.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="~/img/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="We are excited to have you join us and participate in the exciting world of online auctioning.
+                     Whether you are a seller looking to market your products or a buyer looking to secure the best deals,
+                     our platform has everything you need to get started.">
+                </div>
+                <div class="column">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <br>
+
+
+    <br>
+
+
+    
+
+
+
+
+
+
+
+
+    <br>
+
+
+    <br>
+
+
+    <br>
+
+    @*Customer testimonials*@
+    <br>
+    <hr>
+    <br>
+
+    <h2 class="glow"> TESTIMONIALS</h2>
+
+    <hr>
+    <br>
+
+    <div class="test_row">
+        <div class="test_column">
+            <div class="card">
+                <img src="~/img/testimonials/test1.jpg" alt="Jane" style="width:100%">
+                <div class="TestContainer">
+                    <h2>Jane Milik</h2>
+                    <p class="title">CEO &amp; Founder</p>
+                    <p>
+                        "I've purchased several rare items from this online auction house and have been impressed with the quality and authenticity of each item.
+                        A trustworthy source for collectors."
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="test_column">
+            <div class="card">
+                <img src="~/img/testimonials/test2.jpg" alt="Mike" style="width:100%">
+                <div class="TestContainer">
+                    <h2>Mitchelle Ross</h2>
+                    <p class="title">Art Director</p>
+                    <p>
+                        I've been using this online auction house for years and have never been disappointed.
+                        The bidding process is seamless and the items are always accurately described.
+                        Highly recommend!.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="test_column">
+            <div class="card">
+                <img src="~/img/testimonials/test3.jpg" alt="John" style="width:100%">
+                <div class="TestContainer">
+                    <h2>Johnny Bravo</h2>
+                    <p class="title">Designer</p>
+                    <p>
+                        "I needed to sell some vintage items and decided to try this online auction house.
+                        It was quick and hassle-free, and I was pleasantly surprised by the final selling price.
+                        Will definitely use again!"
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="test_column">
+            <div class="card">
+                <img src="~/img/testimonials/test4.jpg" alt="John" style="width:100%">
+                <div class="TestContainer">
+                    <h2>Billy Butcher</h2>
+                    <p class="title">Actor</p>
+                    <p>
+                        "I was able to find exactly what I was looking for at this online auction house.
+                        The site is easy to navigate and the customer service is exceptional."
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="test_column">
+            <div class="card">
+                <img src="~/img/testimonials/test5.jpg" alt="John" style="width:100%">
+                <div class="TestContainer">
+                    <h2>Annie Jane</h2>
+                    <p class="title">Software Engineer</p>
+                    <p>
+                        "I've purchased several rare items from this online auction house and have been impressed with the quality and authenticity of each item.
+                        A trustworthy source for collectors."
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="test_column">
+            <div class="card">
+                <img src="~/img/testimonials/test6.jpg" alt="John" style="width:100%">
+                <div class="TestContainer">
+                    <h2>Chloe Decker</h2>
+                    <p class="title">Artist</p>
+                    <p>
+                        "The selection of items available on this online auction house is unparalleled.
+                        From jewelry to furniture to art, I always find something unique and special."
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+        <br>
+
+
+
+
+
+
+
+
+    </div>
+
+
+<br>
+<hr>
+
+    <form method="get" action="@Url.Action("Search", "Item")" class="form-inline my-2 my-lg-0 d-flex align-items-center">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="searchString">
+        <button class="btn btn-outline-success my-sm-0" type="submit">Search</button>
+    </form>
+
+
+<hr>
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+
+
+
+

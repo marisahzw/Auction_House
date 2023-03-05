@@ -1,0 +1,68 @@
+﻿
+.form-group input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1.1rem;
+    padding: 10px 5px;
+    width: 100%;
+    transition: border-color .3s;
+}
+body {
+    background-image: url('/img/Account/Login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-group input:focus {
+    border-color: #6C63FF;
+    outline: none;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #6C63FF;
+    transition: color .3s;
+}
+
+.form-group input:focus + label {
+    color: #6C63FF;
+}
+
+.btn-outline-secondary {
+    border-color: #6C63FF;
+    color: #6C63FF;
+    transition: all .3s;
+}
+
+    .btn-outline-secondary:hover {
+        background-color: #6C63FF;
+        color: #fff;
+    }
+
+.btn-outline-success {
+    background-color: #6C63FF;
+    color: #fff;
+    transition: all .3s;
+}
+
+    .btn-outline-success:hover {
+        background-color: #524FFF;
+        color: #fff;
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.col-md-6.offset-3 {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+

@@ -1,0 +1,40 @@
+﻿@model Item
+
+@{
+    ViewData["Title"] = "Item Details";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">@Model.Name</h3>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="@Model.ImageURL" class="img-fluid" alt="@Model.Name" />
+
+            </div>
+            <div class="col-md-8">
+                <p class="card-text">@Model.Description</p>
+                <dl class="row">
+                    <dt class="col-sm-3">Condition</dt>
+                    <dd class="col-sm-9">@Model.ItemCondition</dd>
+                    <dt class="col-sm-3">Category</dt>
+                    <dd class="col-sm-9">@Model.ItemCategory</dd>
+                    <dt class="col-sm-3">Start Date</dt>
+                    <dd class="col-sm-9">@Model.AuctionStart.ToString("dd MMMM yyyy")</dd>
+                    <dt class="col-sm-3">End Date</dt>
+                    <dd class="col-sm-9">@Model.AuctionEnd.ToString("dd MMMM yyyy")</dd>
+                    <dt class="col-sm-3">Minimum Bid</dt>
+                    <dd class="col-sm-9">@Model.MinimumBid.ToString("c")</dd>
+                </dl>
+                <a class="btn btn-success @((DateTime.Now > Model.AuctionEnd) ? "disabled" : "")"
+                   asp-controller="Orders"
+                   asp-action="AddItemToShoppingCart"
+                   asp-route-id="@Model.Id">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
